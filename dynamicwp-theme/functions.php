@@ -252,6 +252,9 @@ require_once get_template_directory() . "/inc/slider-custom-post-register.php";
 // custom post for Gallery-custom-post-register /*register file*/
 require_once get_template_directory() . "/inc/gallery-custom-post-register.php";
 
+// custom post for Gallery-Album-post-register /*register file*/
+require_once get_template_directory() . "/inc/album-gallery-post-register.php";
+
 // custom query for Gallery file*/
 require_once get_template_directory() . "/inc/gallery-custom-query.php";
 

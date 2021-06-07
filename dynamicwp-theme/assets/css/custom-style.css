@@ -17,7 +17,8 @@
 
 /*** header start  ***/
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -47,11 +48,11 @@ header li {
   cursor: pointer;
 }
 
-header .navigationWrap nav>ul .sub-menu li {
+header .navigationWrap nav > ul .sub-menu li {
   margin: 0;
 }
 
-header .navigationWrap nav>ul .sub-menu li a {
+header .navigationWrap nav > ul .sub-menu li a {
   padding: 10px;
   margin: 0;
   font-size: 14px;
@@ -64,7 +65,8 @@ header a {
   display: inline-block;
 }
 
-header .active a, header a:hover {
+header .active a,
+header a:hover {
   text-decoration: none;
   color: var(--text-dark-color);
 }
@@ -100,12 +102,12 @@ footer .logoBx a {
   width: auto;
 }
 
-header .navigationWrap nav>ul {
+header .navigationWrap nav > ul {
   display: flex;
   flex-wrap: wrap;
 }
 
-header .navigationWrap nav>ul li a {
+header .navigationWrap nav > ul li a {
   padding: 40px 0;
   display: inline-block;
   font-size: 18px;
@@ -147,7 +149,7 @@ header nav .sub-menu {
   transition: 0.5s;
 }
 
-.menu-item-has-children:hover>.sub-menu {
+.menu-item-has-children:hover > .sub-menu {
   display: block;
 }
 
@@ -156,12 +158,12 @@ header nav .sub-menu {
   left: 100%;
 }
 
-header nav>ul>li:last-child .sub-menu {
+header nav > ul > li:last-child .sub-menu {
   right: 0;
   left: unset;
 }
 
-header nav>ul>li:last-child .sub-menu .sub-menu {
+header nav > ul > li:last-child .sub-menu .sub-menu {
   right: 100%;
   left: unset;
 }
@@ -290,7 +292,8 @@ footer a {
   margin-right: 10px;
 }
 
-.footer-sci a:hover, .footer-sci a:hover i {
+.footer-sci a:hover,
+.footer-sci a:hover i {
   border-color: var(--icon-color);
   color: var(--icon-color);
 }
@@ -401,7 +404,8 @@ div.pagination {
   display: none;
 }
 
-.pagination .current, .pagination .page-numbers {
+.pagination .current,
+.pagination .page-numbers {
   text-decoration: none;
   color: var(--text-light-color);
   background: var(--primary-color);
@@ -417,14 +421,15 @@ div.pagination {
   background: var(--text-dark-color);
 }
 
-.pagination .current, .pagination .page-numbers:hover {
+.pagination .current,
+.pagination .page-numbers:hover {
   background: var(--text-dark-color);
 }
 
 /* breadcrumbs style */
 
 .breadcrumbs {
-  background-color: #F5F6F5;
+  background-color: #f5f6f5;
   padding: 9rem 0 12rem;
   position: relative;
   overflow: hidden;
@@ -432,13 +437,14 @@ div.pagination {
 }
 
 .breadcrumbs::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("http://dynamicwp/wp-content/uploads/2021/05/shape.png") no-repeat bottom center/ 100%;
+  background: url("http://dynamicwp/wp-content/uploads/2021/05/shape.png")
+    no-repeat bottom center/ 100%;
   background-position-y: calc(100% + 100px);
   pointer-events: none;
 }
@@ -533,13 +539,15 @@ div.pagination {
   margin-left: 10px;
 }
 
-.latest-post-thumbnail+.latest-post-meta {
+.latest-post-thumbnail + .latest-post-meta {
   margin-left: 10px;
 }
 
 /* single post design */
 
-section.single-post, section.category-sec, section.archive {
+section.single-post,
+section.category-sec,
+section.archive {
   padding: 100px 0;
 }
 
@@ -611,20 +619,22 @@ section.single-post, section.category-sec, section.archive {
   position: absolute;
 }
 
-.blog-post ul, .blog-post ol {
+.blog-post ul,
+.blog-post ol {
   padding: 0;
   margin: 15px 0;
   list-style: none;
 }
 
-.blog-post ul li, .blog-post ol li {
+.blog-post ul li,
+.blog-post ol li {
   position: relative;
   padding-left: 45px;
   margin-bottom: 10px;
 }
 
 .blog-post ul li::before {
-  content: '';
+  content: "";
   background: var(--primary-color);
   position: absolute;
   top: 50%;
@@ -640,7 +650,7 @@ section.single-post, section.category-sec, section.archive {
 
 .blog-post ol li::before {
   counter-increment: orderList;
-  content: ""counter(orderList)"";
+  content: "" counter(orderList) "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -795,7 +805,8 @@ section.single-post, section.category-sec, section.archive {
   flex-wrap: wrap;
 }
 
-.comment-form .comment-form-email, .comment-form .comment-form-author {
+.comment-form .comment-form-email,
+.comment-form .comment-form-author {
   flex-grow: 1;
   flex-basis: calc(50% - 30px);
 }
@@ -838,7 +849,8 @@ section.single-post, section.category-sec, section.archive {
   order: 6;
 }
 
-.comment-form input, .comment-form textarea {
+.comment-form input,
+.comment-form textarea {
   width: 100%;
   min-height: 50px;
   border: 1px solid #37373726;
@@ -916,7 +928,7 @@ span.required {
 }
 
 .post-tags li {
-  padding: 0!important;
+  padding: 0 !important;
 }
 
 .post-tags li:before {
@@ -947,10 +959,90 @@ span.required {
   margin: 3px;
 }
 
+/* album gallery design */
+section.album-gallery-wrap {
+  background: #fff;
+  padding: 100px 15px;
+  position: relative;
+  z-index: 1;
+}
+
+section.album-gallery-wrap a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.album-wrap {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.album-wrap::before,
+.album-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #2b3136;
+  z-index: -1;
+  transition: 0.5s;
+  box-shadow: 0 0 3px rgb(0 0 0 / 30%);
+}
+
+.album-wrap::before {
+  transform: rotate(-3deg);
+}
+
+.album-wrap::after {
+  transform: rotate(3deg);
+}
+.album-wrap:hover::before,
+.album-wrap:hover::after {
+  transform: unset;
+}
+
+.album-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.album-wrap:hover .overlay {
+  transform: scale(1);
+}
+
+.album-wrap .album-title {
+  z-index: 1;
+  margin-top: 30px;
+  transition: 0.5s;
+  color: #fff;
+  opacity: 0;
+  font-size: 22px;
+}
+.album-wrap:hover .album-title {
+  margin-top: 0px;
+  opacity: 1;
+}
+
 /*** Responsive start ***/
 
 @media (max-width: 1600px) {
-  header .navigationWrap nav>ul li a {
+  header .navigationWrap nav > ul li a {
     font-size: 16px;
   }
   header nav .sub-menu {
@@ -958,13 +1050,13 @@ span.required {
   }
 }
 
-@media (min-width:1399.98px) {
+@media (min-width: 1399.98px) {
   .footer-sec.first {
     padding-right: 35px;
   }
 }
 
-@media (max-width:1470px) {
+@media (max-width: 1470px) {
   header nav .sub-menu {
     left: unset;
     right: 0;
@@ -978,8 +1070,8 @@ span.required {
   }
 }
 
-@media (max-width:1200px) {
-  header .navigationWrap nav>ul li a {
+@media (max-width: 1200px) {
+  header .navigationWrap nav > ul li a {
     font-size: 15px;
   }
   .logoBx {
@@ -993,7 +1085,7 @@ span.required {
   }
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   header li {
     margin-left: 0;
   }
@@ -1042,7 +1134,7 @@ span.required {
     width: 100%;
     max-width: 400px;
   }
-  header .navigationWrap nav>ul {
+  header .navigationWrap nav > ul {
     flex-direction: column;
   }
   header ul .sub-menu {
@@ -1050,20 +1142,20 @@ span.required {
     background: rgba(255, 255, 255, 0.03);
     transition: unset;
   }
-  .menu-item-has-children:hover>.sub-menu {
+  .menu-item-has-children:hover > .sub-menu {
     display: none;
   }
   .sub-menu .subMenuAngle {
     margin-right: 0px;
   }
-  header .navigationWrap nav>ul li a {
+  header .navigationWrap nav > ul li a {
     margin-left: 0;
   }
   header .navigationWrap nav ul li a {
     padding: 0;
     flex-basis: calc(100% - 35px);
   }
-  header .navigationWrap nav>ul .sub-menu li a {
+  header .navigationWrap nav > ul .sub-menu li a {
     padding: 0;
   }
   header .a-Wrap {
@@ -1103,7 +1195,7 @@ span.required {
 
 /* for mobile tab Menus when user login via Dashboard */
 
-@media (max-width:783.98px) {
+@media (max-width: 783.98px) {
   body.logged-in header .navigationWrap {
     top: 46px;
   }
@@ -1150,10 +1242,11 @@ span.required {
   .comments-area {
     padding: 15px;
   }
-  .comment-form .comment-form-email, .comment-form .comment-form-author {
+  .comment-form .comment-form-email,
+  .comment-form .comment-form-author {
     flex-basis: 100%;
-    margin-left: 0!important;
-    margin-right: 0!important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   .comments-area .comments-title {
     font-size: 16px;
@@ -1181,7 +1274,7 @@ span.required {
   }
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
   .logoBx a {
     font-size: 32px;
   }
@@ -1204,7 +1297,7 @@ span.required {
   }
 }
 
-@media (max-width:480px) {
+@media (max-width: 480px) {
   .breadcrumbs {
     padding: 4rem 0 6rem;
   }

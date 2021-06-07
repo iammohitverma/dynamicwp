@@ -31,7 +31,6 @@ get_header(); ?>
                     <a href="<?php echo $url ?>"> my Link </a>
                     
 
-
                     <h1> <?php echo  get_post_meta( get_the_ID(), 'dynamicwp_customtextId', true ); ?> </h1>
 
 

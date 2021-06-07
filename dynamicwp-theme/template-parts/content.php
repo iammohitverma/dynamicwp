@@ -1,5 +1,5 @@
     <!-- for default single post -->
-
+<!-- set default if not single post for other custom post type -->
 <section class="single-post">
     <div class="container">
         <div class="row">
