@@ -115,3 +115,54 @@ function dynamicwp_customize_register($wp_customize){
 
 }
 add_action('customize_register', 'dynamicwp_customize_register');
+
+
+
+
+
+// for topbar
+
+//     $topbar_texts = array(
+//         'sg' => __('Topbar Text for SG', 'justco'),
+//         'au' => __('Topbar Text for AU', 'justco'),
+//         'jp' => __('Topbar Text for JP', 'justco'),
+//         'jp_en' => __('Topbar Text for JP - EN', 'justco'),
+//         'kr' => __('Topbar Text for KR', 'justco'),
+//         'kr_en' => __('Topbar Text for KR - EN', 'justco'),
+//         'th' => __('Topbar Text for TH', 'justco'),
+//         'th_en' => __('Topbar Text for TH - EN', 'justco'),
+//         'tw' => __('Topbar Text for TW', 'justco'),
+//         'tw_en' => __('Topbar Text for TW - EN', 'justco'),
+//     );
+    
+//     foreach ($topbar_texts as $key => $label) {
+//         $setting_key = 'topbar_text_' . strtolower($key);
+    
+//         // Add Setting
+//         $wp_customize->add_setting($setting_key, array(
+//             'default'           => '',
+//             'capability'        => 'edit_theme_options',
+//             'sanitize_callback' => 'esc_attr',
+//             'type'              => 'theme_mod',
+//         ));
+    
+//         // Add Control
+//         $wp_customize->add_control($setting_key, array(
+//             'label'    => $label,
+//             'section'  => 'topbar_content_section',
+//             'settings' => $setting_key,
+//             'type'     => 'textarea',
+//         ));
+//     }
+
+// added this in customizer
+
+
+// for dynamically show in frontend
+// if ($c_lang == "en" && $c_lang != "") {
+//     $setting_key = 'topbar_text_' . $c_code . '_' . $c_lang;
+// } else {
+//     $setting_key = 'topbar_text_' . $c_code;
+// }
+// $topBarText = get_theme_mod($setting_key);
+// echo $topBarText; 
