@@ -230,3 +230,16 @@ for ($i = 1; $i <= 2; $i++) {
         <?php
     }
 }
+
+
+/*************************** */
+//Customizer setting for video
+$wp_customize->add_setting( 'video_section', array(
+    'transport' => 'refresh',
+) );
+$wp_customize->add_control( new WP_Customize_Upload_Control ( $wp_customize, 'video_section', array(
+    'label' => __( 'Video', 'my_theme' ),
+    'section' => 'header',
+    'settings' => 'video_section',
+) ) );
+/*************************** */
